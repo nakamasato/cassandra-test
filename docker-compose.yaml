@@ -1,0 +1,9 @@
+version: "3.5"
+
+services:
+  cassandra:
+    image: cassandra:3.11
+
+networks:
+  default:
+    name: cassandra
