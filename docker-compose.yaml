@@ -3,6 +3,8 @@ version: "3.5"
 services:
   cassandra:
     image: cassandra:3.11
+    volumes:
+      - ./cassandra.yaml:/etc/cassandra/cassandra.yaml
 
 networks:
   default:
